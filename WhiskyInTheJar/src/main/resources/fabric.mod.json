@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "whisky-in-the-jar",
+	"version": "${version}",
+	"name": "Whisky In The Jar",
+	"description": "\"Whisky In The Jar\" is a fabric mod for Minecraft that brings an exciting new experience to the game with a pirate-themed focus on exploration and adventure. The mod transforms the Overworld into a collection of various islands, removing the traditional villages and replacing them with bustling port cities on select islands.",
+	"authors": [
+		"dotRelith"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/dotRelith/WhiskyInTheJar"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/whisky-in-the-jar/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "dot.relith.whisky_in_the_jar.ExampleMod",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "dot.relith.whisky_in_the_jar.ExampleModDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"whisky-in-the-jar.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.12",
+		"minecraft": "~1.18.2",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.8.0"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
